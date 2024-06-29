@@ -1,0 +1,65 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Messaging Queue Smoke Test Report</title>
+            <style>
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                table, th, td {
+                    border: 1px solid black;
+                }
+                th, td {
+                    padding: 10px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #f2f2f2;
+                }
+                .status-up {
+                    background-color: #d4edda;
+                    color: #155724;
+                }
+                .status-down {
+                    background-color: #f8d7da;
+                    color: #721c24;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Messaging Queue Smoke Test Report</h1>
+            <table>
+                <tr>
+                    <th>Queue Name</th>
+                    <th>Queue URL</th>
+                    <th>Queue Type</th>
+                    <th>Status</th>
+                </tr>
+                
+                <tr>
+                    <td>Queue1</td>
+                    <td>http://example.com/queue1</td>
+                    <td>RabbitMQ</td>
+                    <td class="status-down">Down</td>
+                </tr>
+                
+                <tr>
+                    <td>Queue2</td>
+                    <td>http://example.com/queue2</td>
+                    <td>Kafka</td>
+                    <td class="status-down">Down</td>
+                </tr>
+                
+                <tr>
+                    <td>Queue3</td>
+                    <td>http://example.com/queue3</td>
+                    <td>ActiveMQ</td>
+                    <td class="status-down">Down</td>
+                </tr>
+                
+            </table>
+        </body>
+        </html>
+        
